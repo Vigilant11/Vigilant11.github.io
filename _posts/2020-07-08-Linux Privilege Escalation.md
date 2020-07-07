@@ -37,7 +37,6 @@ Finding installed software, running processes, bind ports, and OS version
 
 ##### Services and Programs running as root
 - ps aux
-- ps -ef | grep root
 - top
 - cat /etc/services
 ##### #mysql running as root
@@ -69,7 +68,6 @@ Finding installed software, running processes, bind ports, and OS version
 - cat /etc/apache2/apache2.conf
 - cat /etc/httpd/conf/httpd.conf
 - cat /opt/lampp/etc/httpd.conf
-- ls -aRl /etc/ | awk '$1 ~ /^.*r.*/
 
 ##### Scheduled Jobs
 - crontab -l
