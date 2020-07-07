@@ -130,8 +130,6 @@ Finding installed software, running processes, bind ports, and OS version
 
 ##### Scheduled Tasks
 - schtasks /query /fo LIST 2>nul | findstr TaskName
-- schtasks /query /fo LIST /v > schtasks.txt; cat schtask.txt | grep "SYSTEM\|Task To Run" | grep -B 1 SYSTEM
-- Get-ScheduledTask | where {$_.TaskPath -notlike "\Microsoft*"} | ft TaskName,TaskPath,State
 
 ##### Startup Tasks
 - wmic startup get caption,command
@@ -163,10 +161,8 @@ Finding installed software, running processes, bind ports, and OS version
 - C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\
 
 ### 6.	EOP : Unquoted Service Paths
-
-- wmic service get name,displayname,pathname,startmode |findstr /i "Auto" |findstr /i /v "C:\Windows\\" |findstr /i /v """
-- wmic service get name,displayname,startmode,pathname | findstr /i /v "C:\Windows\\" |findstr /i /v """
 - wsl whoamiwmic service get name,displayname,pathname,startmode |findstr /i "Auto" |findstr /i /v "C:\Windows\\" |findstr /i /v """ 
+
 ###### Example-
 - Suppose we found: C:\Program Files (x86)\Program Folder\A Subfolder\Executable.exe
 - check for permissions of folder path
