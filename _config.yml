@@ -1,13 +1,13 @@
 title: OSCP RESOURCES
-#iconURL: assets/default-icon.png
+iconURL: assets/default-icon.png
 theme: jekyll-theme-leaf
 
 # for a clean URL
 permalink: :slug
 
 social:
-  twitter: LOC_EVL
-  github: Vigilante11
+  #twitter: LOC_EVL
+  #github: Vigilante11
 
 plugins:
  - jekyll-feed
