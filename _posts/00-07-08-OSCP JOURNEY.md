@@ -1,10 +1,6 @@
 
 
 
-
-
-
-
 ##### This is the journey of getting my OSCP certification.
 
 There are many reviews available on the internet for reference so I am going to give quick review about my journey and mistakes that people should avoid while preparing.
